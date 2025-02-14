@@ -14,15 +14,48 @@ form{
     align-items: center;
     justify-content: space-between;
 }
+form div{
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+ 
+    align-items: center;
+    justify-content: space-between;
+}
 input{
+    margin: 10px;
+    padding: 5px;
     background-color: #000000ab;
-   color:white;
+    color:white;
     border:none;
-    border-radius: 20px;
+    border-radius: 10px;
+    height: 5vh;
 }
 textarea{
+    margin: 10px;
+    padding: 5px;
+    height: 10vh;
+    background-color: #000000ad;
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
+button{
+    margin: 10px;
+    height: 5vh;
+    padding: 5px;
+    background-color: #000000ad;
+    color:white;
+    border:none;
+    border-radius: 10px;
+    width: 15vw;
+}
+select{
+    height: 5vh;
+    margin: 10px;
+    padding: 5px;
     background-color: #000000ad;
    color:white;
     border:none;
-    border-radius: 20px;
+    border-radius: 10px;
 }
