@@ -7,27 +7,45 @@
 <link rel="stylesheet" href="style.css">
 
 <script>
-    function handleSubmit() {
-         if (document.getElementById("first_name").value == "" || document.getElementById("first_name").value == NULL) alert("First Name is Required.")
-        else if (document.getElementById("last_name").value == "" || document.getElementById("last_name").value == NULL) alert("Last Name is Required.")
-        else if(document.getElementById("dob").value==""||document.getElementById("dob").value==NULL) alert("Date of Birth is Required.")
-        else if(document.getElementById("address").value==""||document.getElementById("address").value==NULL) alert("Address is Required.")
-        else if(document.getElementById("pincode").value==""||document.getElementById("pincode").value==NULL) alert("Pincode is Required.")
-        else if(document.getElementById("country").value==""||document.getElementById("country").value==NULL) alert("Country is Required.")
-        else if(document.getElementById("state").value==""||document.getElementById("state").value==NULL) alert("State is Required.")
-    //     let radioValid = false;
-    // let radios = document.getElementsByName("gender");
-    // while (!radioValid && i < radios.length) {
-    //     if (radios[i].checked) radioValid = true;
-    //     i++;
-    // }
-    // if (!radioValid) alert("Gender is Mandatory");
-    
-    // var selects = document.getElementsByName("subject_of_interest");
-    // if (selects[0].checked) alert("Select a Subject ");
-    
-
+function handleSubmit() {
+    function isEmpty(field) {
+        return field.value === "" || field.value == null;
     }
+
+    if (isEmpty(document.getElementById("first_name"))) {
+        alert("First Name is Required.");
+        return false; 
+    }
+    if (isEmpty(document.getElementById("last_name"))) {
+        alert("Last Name is Required.");
+        return false;
+    }
+    if (isEmpty(document.getElementById("dob"))) {
+        alert("Date of Birth is Required.");
+        return false;
+    }
+    if (isEmpty(document.getElementById("address"))) {
+        alert("Address is Required.");
+        return false;
+    }
+    if (isEmpty(document.getElementById("pincode"))) {
+        alert("Pincode is Required.");
+        return false;
+    }
+    if (isEmpty(document.getElementById("country"))) {
+        alert("Country is Required.");
+        return false;
+    }
+    if (isEmpty(document.getElementById("state"))) {
+        alert("State is Required.");
+        return false;
+    }
+
+
+
+
+    return true; 
+}
 </script>
 
 <body>
