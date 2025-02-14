@@ -42,7 +42,31 @@ function handleSubmit() {
     }
 
 
+    let genderSelected = false;
+    let radios = document.getElementsByName("gender");
+    for (let i = 0; i < radios.length; i++) { 
+        if (radios[i].checked) {
+            genderSelected = true;
+            break;
+        }
+    }
+    if (!genderSelected) {
+        alert("Gender is Mandatory");
+        return false;
+    }
 
+    let subjectSelected = false;
+    let selects = document.getElementsByName("subject_of_interest");
+    for (let i = 0; i < selects.length; i++) {
+        if (selects[i].checked) {
+            subjectSelected = true;
+            break;
+        }
+    }
+    if (!subjectSelected) {
+        alert("Select at least one Subject of Interest"); 
+        return false;
+    }
 
     return true; 
 }
