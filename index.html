@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<script>
+    function handleSubmit(){
+        if(document.getElementById("first_name").value==""||document.getElementById("first_name").value==NULL) alert("First Name is Required.")
+        if(document.getElementById("last_name").value==""||document.getElementById("last_name").value==NULL) alert("First Name is Required.")
+        // if(document.getElementById("last_name").value==""||document.getElementById("last_name").value==NULL) alert("First Name is Required.")
+       let radioValid=false;
+       var radios = document.getElementsByName("gender");
+        while (!formValid && i < radios.length) {
+        if (radios[i].checked) radioValid = true;
+        i++;        
+    }
+    }
+</script>
+
+<body>
+    <h1 align="center">Registration Form</h1>
+    <form onsubmit="handleSubmit()">
+        <div>
+            First Name : <input type="text" name="first_name" id="first_name" />
+        </div>
+        <div>
+            Last Name : <input type="text" name="last_name" id="last_name" />
+        </div>
+        <div>
+            Gender : <input type="radio" name="gender" value="male">M</input>
+            <input type="radio" name="gender" value="female">F</input>
+        </div>
+        <div>
+
+            Subject of Interest :
+            <select id="subject_of_interest" name="subject_of_interest">
+                <option selected>Select one</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>Maths</option>
+                <option>Biology</option>
+            </select>
+        </div>
+        <div>
+
+            Date of Birth:
+            <input type="date" id="dob" name="dob" />
+        </div>
+        <div>
+            Langauges Known:
+            <input type="checkbox"id="language_known1" name="language_known" value="english">English</input>
+            <input type="checkbox" id="language_known2"name="language_known" value="hindi">Hindi</input>
+            <input type="checkbox" id="language_known3"name="language_known" value="telugu">Telugu</input>
+        </div>
+        <div>
+
+            Address:<br />
+            <textarea height="50" id ="address"width="100"></textarea>
+        </div>
+        <div>
+
+            PIN Code : <input type="text" id ="pincode" name="pincode" />
+        </div>
+        <div>
+
+            Country : <input type="text" id ="country"name="country" />
+        </div>
+        <div>
+
+            State : <input type="text" id ="state"name="state" />
+        </div>
+        <div>
+
+            <button name="submit">Submit</button>
+
+            <button name="reset">Reset</button>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: largeer;
+}
+form{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+input{
+    background-color: #000000ab;
+   color:white;
+    border:none;
+    border-radius: 20px;
+}
+textarea{
+    background-color: #000000ad;
+   color:white;
+    border:none;
+    border-radius: 20px;
+}
